@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  background-color: #f4d04e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.card {
+  background-color: #fff;
+  width: 384px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: #000 7px 7px 0px 0px;
+}
+.mainphoto {
+  width: 343px;
+  border-radius: 10px;
+}
+.pra1 {
+  color: #000;
+  background-color: #f4d04e;
+  border-radius: 5px;
+  padding: 7px 12px;
+  width: 90px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+.pra2 {
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.description {
+  color: #808080;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+.author img {
+  width: 32px;
+  height: 32px;
+  margin: 10px 0;
+}
+.title:hover {
+  color: #f4d04e;
+}
+
+.card:hover {
+  box-shadow: #000 9px 9px 0 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 327px !important;
+  }
+  .mainphoto {
+    width: 290px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
